@@ -1,0 +1,17 @@
+{
+ "name": "Stop Procrastination",
+ "version": "2.0",
+ "description": "Stop Youtube procrastination! Shows current time after every video.",
+ "content_scripts": [
+ {
+ 	"matches": ["https://www.youtube.com/watch*"],
+ 	"css": ["main.css"],
+ 	"js": ["content.js"]
+ }],
+ "page_action": {
+ 	"default_popup": "popup.html",
+ 	"default_icon": "youtube.png",
+ 	"default_title": "Stop procrastination"
+ },
+ "manifest_version": 2
+}
